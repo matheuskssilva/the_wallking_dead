@@ -1,0 +1,109 @@
+@use 'variaveis';
+@use 'reset';
+.container_seasons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    .h1_season_container {
+        font-family: variaveis.$fontTitle;
+        font-size: 32px;
+        color: variaveis.$titleColor;
+        @media screen and (min-width: '768px') {
+            font-size: 48px;
+        }
+    }
+    .group_seasons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 289px;
+        @media screen and (min-width: '1023px') {
+            margin-top: 60px;
+            gap: 20px;
+        }
+        @media screen and (min-width: '768px') {
+            display: grid;
+            grid-template-columns: repeat(2, 62%);
+            width: 568px;
+        }
+        @media screen and (min-width: '1023px') {
+            width: 617px;
+            grid-template-columns: repeat(2, 2fr);
+        }
+        h1 {
+            font-family: variaveis.$fontTitle;
+            font-size: 20px;
+            color: variaveis.$titleColor;
+            width: 100%;
+            @media screen and (min-width: '768px') {
+                font-size: 28px;
+            }
+            @media screen and (min-width: '1023px') {
+                font-size: 32px;
+            }
+        }
+        p {
+            font-family: variaveis.$fontText;
+            font-size: 10px;
+            color: variaveis.$colorWhite;
+            width: 189px;
+            @media screen and (min-width: '768px') {
+                font-size: 10px;
+                width: 220px;
+            }
+            @media screen and (min-width: '1023px') {
+                font-size: 11px;
+                width: 250px;
+            }
+        }
+        img {
+            width: 110px;
+            @media screen and (min-width: '1023px') {
+                width: 185px;
+                height: 278px;
+            }
+        }
+    }
+    .group_season1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        .text_season1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+            text-align: left;
+        }
+        @media screen and (min-width: '1023px') {
+            gap: 20px;
+        }
+    }
+    .group_season2 {
+        display: flex;
+        gap: 10px;
+        @media screen and (min-width: '768px') {
+            flex-direction: row-reverse;
+        }
+        .text_season2 {
+            h1 {
+                text-align: left;
+            }
+            @media screen and (min-width: '1023px') {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        @media screen and (min-width: '1023px') {
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use 'variaveis';
+@use 'reset';
+footer {
+    width: 100%;
+    height: 350px;
+    .container_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 230px;
+        background-color: variaveis.$backgroundFooter;
+        width: 100%;
+        img {
+            width: 150px;
+            margin-top: 25px;
+        }
+        .text_footer {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            p {
+                font-family: variaveis.$fontText;
+                font-size: 8px;
+                color: variaveis.$colorWhite;
+                width: 280px;
+                text-align: center;
+                @media screen and (min-width: 768px) {
+                    font-size: 10px;
+                    width: 789px;
+                }
+                @media screen and (min-width: 768px) {
+                    font-size: 13px;
+                    width: 967px;
+                }
+            }
+        }
+    }
+}

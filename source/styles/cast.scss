@@ -1,0 +1,60 @@
+@use 'variaveis';
+@use 'reset';
+.container_cast {
+    .cast {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+        @media screen and (min-width: '1023px') {
+            margin-top: 50px;
+        }
+        h1 {
+            font-family: variaveis.$fontTitle;
+            font-size: 32px;
+            color: variaveis.$titleColor;
+            text-align: center;
+            @media screen and (min-width: '769px') {
+                font-size: 48px;
+            }
+        }
+        .cast_group {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 10px;
+            margin: 0 auto;
+            @media screen and (min-width: '1023px') {
+                display: flex;
+                gap: 26px;
+            }
+            @media screen and (min-width: '768px') {
+                margin-top: 30px;
+                grid-template-columns: repeat(3, 35%);
+            }
+            .text_group {
+                img {
+                    width: 150px;
+                    transition: .7s ease-in;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    @media screen and (min-width: '768px') {
+                        width: 192px;
+                    }
+                }
+                .paragrafo {
+                    position: relative;
+                    color: #FFF;
+                    background-color: black;
+                    bottom: 30px;
+                    width: 160px;
+                    display: none;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

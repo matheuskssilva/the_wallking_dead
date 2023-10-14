@@ -1,0 +1,40 @@
+@use 'reset';
+@use 'variaveis';
+@use 'header';
+@use 'curiosities';
+@use 'assista';
+@use 'cast';
+@use 'season';
+@use 'footer';
+body {
+    height: 100vh;
+    background-color: variaveis.$backgroundColor !important;
+}
+
+.scroll_to_top {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    z-index: 99;
+    @media screen and (min-width: '1024px') {
+        right: 10px;
+    }
+    img {
+        width: 34px;
+        height: 34px;
+        @media screen and (min-width: '767px') {
+            width: 44px;
+            height: 44px;
+        }
+        @media screen and (min-width: '1024px') {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}

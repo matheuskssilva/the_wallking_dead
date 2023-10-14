@@ -1,0 +1,238 @@
+@use 'variaveis';
+@use 'reset';
+.general-box {
+    margin-left: 14px;
+    margin-top: 0px;
+    position: fixed;
+    margin-top: 20px;
+    background-color: variaveis.$backgroundColor;
+    width: 100%;
+    @media screen and (min-width: '768px') {
+        background-color: transparent;
+        ;
+    }
+}
+
+.container {
+    position: absolute;
+    .container_nav {
+        @media screen and (min-width: '1023px') {
+            display: flex;
+            margin-left: 200px;
+        }
+    }
+    .navbar {
+        a {
+            img {
+                width: 34px;
+                @media screen and (min-width: '768px') {
+                    width: 44px;
+                    padding-top: 24px;
+                }
+                @media screen and (min-width: '1023px') {
+                    width: 56px;
+                    padding-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url(../../src/images/MENU\ BURGUER.svg);
+    width: 27px;
+    height: 20px;
+    padding: 4px;
+    z-index: 2;
+}
+
+.navCollapse {
+    background-color: rgba(0, 0, 0, 0.94) !important;
+    margin-left: -10px;
+    padding: 10px;
+    width: 200px !important;
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    padding-right: 80px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    a {
+        color: variaveis.$colorP;
+        margin-top: 24px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: variaveis.$fontText;
+        @media screen and (min-width: '768px') {
+            font-size: 14px;
+        }
+        @media screen and (min-width: '1023px') {
+            font-size: 16px;
+        }
+        &:hover {
+            color: variaveis.$colorWhite;
+            transition: 0.8s ease-in-out;
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: #191919 !important;
+    color: variaveis.$colorWhite;
+    border: none;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../src/images/HERO.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+    @media screen and (min-width: '768px') {
+        background-image: url('../../src/images/HERO_ipad.svg');
+        height: 424px;
+        background-position: center;
+        width: 100%;
+    }
+    @media screen and (min-width: '1023px') {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../src/images/HERO_ipad.svg');
+        height: 732px;
+        background-position: center;
+        width: 100%;
+    }
+    .hero_container {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 14px;
+        @media screen and (min-width: '1023px') {
+            padding-top: 80px;
+        }
+        @media screen and (min-width: '1023px') {
+            padding-left: 198px;
+        }
+        h2 {
+            font-family: variaveis.$fontText;
+            font-size: 11px;
+            font-weight: bold;
+            color: variaveis.$colorP;
+            width: 201px;
+            padding-left: 5px;
+            @media screen and (min-width: '768px') {
+                font-size: 14px;
+                width: 100%;
+                color: variaveis.$colorIpadh2;
+                padding-left: 25px;
+            }
+        }
+        p {
+            font-family: variaveis.$fontText;
+            font-size: 8px;
+            color: variaveis.$colorWhite;
+            width: 167px;
+            padding-left: 5px;
+            @media screen and (min-width: '768px') {
+                font-size: 12px;
+                padding-left: 25px;
+                width: 450px;
+            }
+            @media screen and (min-width: '1023px') {
+                font-size: 16px;
+                width: 665px;
+            }
+        }
+        button {
+            width: 86px;
+            height: 25px;
+            font-size: 14px;
+            font-family: variaveis.$fontTitle;
+            background-color: variaveis.$backgroundFooter;
+            color: white;
+            border-radius: 0px 12px 0px 0px;
+            border: none;
+            cursor: pointer;
+            transition: 1s ease-in-out;
+            &:hover {
+                background-color: variaveis.$backgroundBtn2;
+                color: #000000;
+                transition: 1s ease-in-out;
+            }
+            @media screen and (min-width: '768px') {
+                font-size: 20px;
+                margin-left: 25px;
+                width: 132px;
+                height: 42px;
+            }
+            @media screen and (min-width: '1023px') {
+                width: 213px;
+                height: 57px;
+                border-radius: 0px 5px 0px 0px;
+                font-size: 24px;
+            }
+        }
+        img {
+            width: 200px;
+            @media screen and (min-width: '768px') {
+                width: 450px;
+                height: 104px;
+                margin-top: 40px;
+            }
+            @media screen and (min-width: '1023px') {
+                width: 636px;
+                height: 158px;
+            }
+        }
+    }
+}
+
+.modal_video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -100px 100px;
+    transition: 0.9s ease-in-out;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    iframe {
+        width: 300px;
+        height: 150px;
+        opacity: 1;
+        margin-top: -50px;
+        margin-bottom: 60px;
+        @media screen and (min-width: 769px) {
+            width: 600px;
+            height: 380px;
+            margin-top: 10px;
+            margin: 0 100px;
+        }
+    }
+    .btn {
+        position: absolute;
+        z-index: 2;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        color: #fff !important;
+        background-color: #ffffff !important;
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
+        left: 80%;
+        bottom: 520px;
+        @media screen and (min-width: 769px) {
+            bottom: 800px;
+        }
+        .custom-close-btn {
+            color: #fff !important;
+        }
+    }
+}

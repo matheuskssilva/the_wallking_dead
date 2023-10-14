@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wallking Dead</title>
+    <link rel="icon" href="./src/images/twd_icon_logo.jpg">
+    <!-- css -->
+    <link rel="stylesheet" href="./build/styles/main.css">
+
+
+
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container__nav__bar">
+                <div class="container_nav">
+
+                    <nav class="navbar navbar-expand-md navbar-fixed-top bg-transparent nav_bar_content custom-navbar mw-100">
+                        <div class="container-fluid general-box">
+                            <a class="navbar-brand " href="#"><img src="./src/images/amc logo 1.svg" alt="Logo amc"></a>
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+                            <div class="collapse navbar-collapse navCollapse offcanvas offcanvas-start" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#curiosities">CURIOSIDADES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#assistir">ONDE ASSISTIR</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#cast">ELENCO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#season">TEMPORADAS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero_container">
+            <img src="./src/images/logo 1.svg" class="logo_hero" alt="Logo do The Walking Dead">
+            <h2>ENTRE NO MUNDO ATERRORIZANTE DOS MORTOS VIVOS</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+            </p>
+            <button type="submit" id="assistirTrailer">ASSISTIR AGORA</button>
+            <div class="modal_video" id="modal">
+                <div class="modal_container">
+                    <div class="text_modal">
+                        <button type="submit" id="closeBtn" class="btn btn-close bg-transparent" style="color: white"></button>
+                        <iframe id="videoTrailer" width="560" height="315" src="https://www.youtube.com/embed/znuoQeOAhSU?si=638XPPCKG1w_D75c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container_curiosities" id="curiosities">
+        <div class="clashes">
+            <div class="clashes_img">
+                <img src="./src/images/IMAGEM1 1.svg" alt="">
+                <img src="./src/images/IMAGEM2 1.svg" alt="">
+            </div>
+
+            <div class="text_clashes">
+                <h1>CONFRONTOS ÉPICOS</h1>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                    by English versions from the 1914 translation by H. Rackham.</p>
+                <button>CURIOSIDADES</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container_assistir" id="assistir">
+        <div class="assistir">
+            <img class="img_assistir_person" src="./src/images/Rick 1.svg" alt="Foto do Rick">
+
+            <div class="text_assistir">
+                <h1>ASSISTA EM:</h1>
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced<br> below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus
+                </p>
+                <div class="img_assistir">
+                    <img class="img_assistir_amc" src="./src/images/amc logo 1.svg" alt="Logo Amc">
+                    <img class="img_assistir_star" src="./src/images/Star+_logo 1.svg" alt="Logo Star">
+                </div>
+            </div>
+            <img class="img_assistir_person_daryl" src="./src/images/DAryl 1.svg" alt="Foto do Daryl" height="228px">
+        </div>
+    </div>
+
+    <div class="container_cast" id="cast">
+        <div class="cast">
+            <h1>ELENCO</h1>
+            <div class="cast_group">
+                <div class="text_group">
+                    <img src="./src/images/andrew lincol 2.svg" alt="Foto de Andrew Lincol" class="imagem" data-target="paragrafo1">
+                    <p class="paragrafo" id="paragrafo1">andrew</p>
+                </div>
+                <div class="text_group">
+                    <img src="./src/images/carol 2.svg" alt="Foto de Carol" class="imagem" data-target="paragrafo2">
+                    <p class="paragrafo" id="paragrafo2">Carol</p>
+                </div>
+                <div class="text_group">
+                    <img src="./src/images/norman 2.svg" alt="Foto de Norman" class="imagem" data-target="paragrafo3">
+                    <p class="paragrafo" id="paragrafo3">Norman</p>
+                </div>
+                <div class="text_group">
+                    <img src="./src/images/pai do sam e dean 2.svg" alt="Foto de pai do sam e dean" class="imagem" data-target="paragrafo4">
+                    <p class="paragrafo" id="paragrafo4">pai do sam e dean</p>
+                </div>
+                <div class="text_group">
+                    <img src="./src/images/viuva 2.svg" alt="Foto da Viuva" class="imagem" data-target="paragrafo5">
+                    <p class="paragrafo" id="paragrafo5">Viuva</p>
+                </div>
+                <div class="text_group">
+                    <img src="./src/images/MICHONE 2.svg" alt="Foto de Michone" class="imagem" data-target="paragrafo6">
+                    <p class="paragrafo" id="paragrafo6">Michone</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_seasons" id="season">
+        <h1 class="h1_season_container">TEMPORADAS</h1>
+        <div class="group_seasons">
+            <div class="group_season1">
+                <img src="./src/images/1 TEMPORADA 1.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>A série começa quando Rick Grimes, um policial, acorda de um coma e descobre um mundo pós-apocalíptico infestado por zumbis. Ele lidera um grupo de sobreviventes, incluindo sua esposa Lori, filho Carl e um grupo diversificado de personagens,
+                        enquanto eles lutam para encontrar segurança, comida e respostas sobre a epidemia que transformou as pessoas em mortos-vivos.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>O grupo encontra refúgio na fazenda de Hershel Greene, mas a convivência gera tensões internas. Enquanto enfrentam ameaças externas, incluindo o Governador, eles exploram temas de ética e moral em um mundo onde a linha entre humanidade
+                        e monstruosidade se torna turva.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/2 TEMPORADA 1.svg" alt="">
+                </div>
+            </div>
+            <div class="group_season1">
+                <img src="./src/images/1 TEMPORADA 2.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>A narrativa se concentra no conflito entre o grupo de Rick e a comunidade de Woodbury, liderada pelo Governador. A temporada é marcada por confrontos violentos e jogos de poder, explorando o quão longe as pessoas estão dispostas a
+                        ir para sobreviver.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>Uma epidemia ameaça o grupo, forçando-os a tomar medidas drásticas para sobreviver.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/3 TEMPORADA 3.svg" alt="">
+                </div>
+
+            </div>
+            <div class="group_season1">
+                <img src="./src/images/4 TEMPORADA 4.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>Uma epidemia mortal varre a prisão onde o grupo se refugiou, criando desafios médicos e colocando todos em risco. Enquanto tentam conter a ameaça interna, a busca por segurança se torna mais complexa.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                        by English versions from the 1914 translation by H. Rackham.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/5 TEMPORADA 5.svg" alt="">
+                </div>
+            </div>
+            <div class="group_season1">
+                <img src="./src/images/11 TEMPORADA 11.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>O grupo chega a Terminus, uma suposta comunidade segura, mas logo descobre que é um local sinistro e canibal. A temporada destaca a luta do grupo para escapar da armadilha de Terminus e o desejo constante de encontrar um local seguro.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>Os sobreviventes enfrentam conflitos internos e desafios de liderança, enquanto a comunidade de Alexandria é ameaçada por uma horda maciça de zumbis.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/7 TEMPORADA 7.svg" alt="">
+                </div>
+            </div>
+            <div class="group_season1">
+                <img src="./src/images/8 TEMPORADA 8.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>Negan, líder dos Salvadores, introduz uma brutal dinâmica de poder, marcada pela morte de um personagem principal. A temporada explora o impacto psicológico do domínio de Negan sobre o grupo.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>Uma guerra total é travada contra os Salvadores, com batalhas épicas e estratégias de confronto culminando em reviravoltas emocionantes e a queda de Negan.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/9 TEMPORADA 9.svg" alt="">
+                </div>
+            </div>
+            <div class="group_season1">
+                <img src="./src/images/10 TEMPORADA 10.svg" alt="">
+                <div class="text_season1">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p> Comunidades unem forças para construir um futuro melhor, enfrentando novos desafios, incluindo a ameaça dos Sussurradores, que usam peles de zumbis para se infiltrar e causar destruição.</p>
+                </div>
+            </div>
+            <div class="group_season2">
+                <div class="text_season2">
+                    <h1>CONFRONTOS ÉPICOS</h1>
+                    <p>O grupo encontra refúgio na fazenda de Hershel Greene, mas a convivência gera tensões internas. Enquanto enfrentam ameaças externas, incluindo o Governador, eles exploram temas de ética e moral em um mundo onde a linha entre humanidade
+                        e monstruosidade se torna turva.</p>
+                </div>
+                <div class="img_season2">
+                    <img src="./src/images/2 TEMPORADA 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container_footer">
+                <img src="./src/images/Star+_logo 1.svg" alt="Logo Star+">
+                <div class="text_footer">
+                    <p>&copy; 2023 Disney e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+                    <p>Star+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Star+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10,
+                        São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div class="scroll_to_top" onclick="scrollToTop()">
+        <img src="./src/images/icons8-scrollTop.png" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
